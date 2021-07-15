@@ -25,3 +25,32 @@ iris 내장 데이터셋을 로딩하는 함수
 ML 결정트리를 사이킷런에서 구현한 것
 
 학습데이터와 테스트 데이터를 원본데이터로 부터 분리시키는 함수로 구현 예정
+
+
+Estimator - 사이킷런에서 부르는 이름
+
+학습 : `fit()`
+예측 : `predict()`
+
+Classifier ( 분류 ) 구현 클래스
+
+- DecisionTreeClassifier
+- RandomForestClassifier
+- GradientBoostingClassifier
+- GaussianNB
+- SVC
+
+Regressor ( 회귀 ) 구현 클래스
+
+- LinearRegression
+- Ridge
+- Lasso
+- RandomForestRegressor
+- GradientBoostingRegressor
+
+Bunch 는 Python 의 dictionary와 비슷한 것. Key와 Value를 가지고 있다.
+
+테스트데이터가 학습데이터랑 너무 비슷해버리면 결과가 좋게나와버리기 때문에 유의해야한다.
+학습데이터에 없는데도 예측을 잘하는 알고리즘이 좋은 알고리즘이라고 할 수 있는 것.
+
+## 교차 검증
